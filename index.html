@@ -27,7 +27,6 @@
             distance: "8km",
             name: 'Plage de la Caravelle',
             desc: 'Sable blanc, eau turquoise, idéale pour le snorkeling.',
-            image: 'images/caravelle.png',
             type: 'beach'
         },
         {
@@ -35,7 +34,6 @@
             name: 'Plage de Grande Anse',
             distance: "64km",
             desc: 'Longue plage dorée, couchers de soleil magnifiques.',
-            image: 'images/grande-anse.png',
             type: 'beach'
         },
         {
@@ -43,7 +41,6 @@
             name: 'Plage de Bois Jolan',
             distance: "4km",
             desc: 'Plage familiale, eaux peu profondes, cocotiers.',
-            image: 'images/bois-jolan.png',
             type: 'beach'
         },
         {
@@ -51,7 +48,6 @@
             name: 'Plage de la Perle',
             distance: "61km",
             desc: 'Plage sauvage, beauté naturelle.',
-            image: 'images/perle.png',
             type: 'beach'
         },
         {
@@ -59,7 +55,6 @@
             name: 'Plage du Souffleur',
             distance: "36km",
             desc: 'Eaux cristallines, calme et reposante.',
-            image: 'images/souffleur.png',
             type: 'beach'
         },
         {
@@ -67,7 +62,6 @@
             name: 'Plage des Raisins Clairs',
             distance: "11km",
             desc: 'Plage populaire, idéale en famille.',
-            image: 'images/raisins-clairs.png',
             type: 'beach'
         },
         {
@@ -75,7 +69,6 @@
             name: 'Anse à la Gourde',
             distance: "17km",
             desc: 'Réserve naturelle, bon spot de snorkeling.',
-            image: 'images/anse-gourde.png',
             type: 'beach'
         },
         {
@@ -83,17 +76,22 @@
             name: 'Plage de Malendure',
             distance: "65km",
             desc: 'Réserve Cousteau, plongée sous-marine.',
-            image: 'https://www.istockphoto.com/fr/photo/plage-de-malendure-r%C3%A9serve-cousteau-guadeloupe-gm1257253440-368395418',
             type: 'beach'
         },
 
         // Activités
         {
+            coords: [16.281237, -61.696031],
+            name: 'Cascade de bis',
+            distance: "45km",
+            desc: 'Cascade peu connu des touristes',
+            type: 'hike'
+        },
+        {
             coords: [16.039397, -61.662699],
             name: 'La Soufrière',
             distance: "90km",
             desc: 'Randonnée vers le volcan actif.',
-            image: 'https://www.istockphoto.com/fr/photo/volcan-de-la-soufrière-guadeloupe-gm1270204622-373408123',
             type: 'hike'
         },
         {
@@ -101,7 +99,6 @@
             name: 'Réserve Cousteau',
             distance: "66km",
             desc: 'Plongée et snorkeling exceptionnels.',
-            image: 'https://www.istockphoto.com/fr/photo/plage-de-malendure-r%C3%A9serve-cousteau-guadeloupe-gm1257248970-368392825',
             type: 'hike'
         },
         {
@@ -109,7 +106,6 @@
             name: 'Pointe des Châteaux',
             distance: "20km",
             desc: 'Vue imprenable sur l\'Atlantique.',
-            image: 'images/pointe-chateau.png',
             type: 'beach'
         },
         {
@@ -117,7 +113,6 @@
             name: 'Îlet du Gosier',
             distance: "20km",
             desc: 'Îlot avec plage et phare, accessible à la nage.',
-            image: 'https://www.shutterstock.com/fr/image-photo/ilet-du-gosier-guadeloupe-123456789',
             type: 'beach'
         },
         {
@@ -125,14 +120,12 @@
             name: 'Jardin Botanique de Deshaies',
             distance: "68km",
             desc: 'Plantes tropicales, ancienne propriété de Coluche.',
-            image: 'https://www.istockphoto.com/fr/photo/jardin-botanique-de-deshaies-guadeloupe-gm2193383078-611620422',
             type: 'hike'
         },
         {
             name: "Petite Terre",
             coords: [16.1667, -61.1167],
             desc: "Réserve naturelle connue pour ses iguanes et son lagon turquoise.",
-            image: "https://upload.wikimedia.org/wikipedia/commons/3/3e/Distillerie_Damoiseau_10.JPG",
             type: 'beach'
         },
         {
@@ -140,7 +133,6 @@
             distance: "45km",
             coords: [16.166453, -61.623086],
             desc: "Expérience de canyoning au cœur de la Basse-Terre.",
-            image: "https://thumbs.dreamstime.com/b/clear-water-nature-canyon-riviere-moustique-petit-bourg-guadeloupe-336637607.jpg",
             type: 'hike'
         },
         {
@@ -148,7 +140,6 @@
             coords: [16.321217, -61.375662],
             distance: "15km",
             desc: "Rhumerie traditionnelle située au Moule.",
-            image: "images/damoiseau.png",
             type: 'rum'
         },
         {
@@ -156,7 +147,6 @@
             coords: [16.209310, -61.760881],
             distance: "67km",
             desc: "Piscine naturelle",
-            image: "images/acomat.png",
             type: 'hike'
         },
         {
@@ -164,7 +154,6 @@
             coords: [16.315494, -61.688658],
             distance: "48km",
             desc: "Musée du rhum",
-            image: "images/rhum-ste-rose.png",
             type: 'rum'
         },
         {
@@ -172,16 +161,15 @@
             coords: [16.509436, -61.466522],
             distance: "42km",
             desc: "Vue panoramique",
-            image: "images/pointe-gde-vigie.png",
             type: 'hike'
         }
     ];
 
     const icons = {
-    beach: L.icon({ iconUrl: 'icons/ombrelle.png', iconSize: [32, 32] }),
+    beach: L.icon({ iconUrl: 'icons/cocotier.png', iconSize: [24, 24] }),
     house: L.icon({ iconUrl: 'icons/house.png', iconSize: [32, 32] }),
-    hike: L.icon({ iconUrl: 'icons/bottes.png', iconSize: [32, 32] }),
-    rum: L.icon({ iconUrl: 'icons/rum.png', iconSize: [32, 32] }),
+    hike: L.icon({ iconUrl: 'icons/randonnee.png', iconSize: [24, 24] }),
+    rum: L.icon({ iconUrl: 'icons/rum.png', iconSize: [24, 24] }),
     default: L.icon({ iconUrl: 'icons/marker.png', iconSize: [32, 32] })
     };
 
@@ -194,7 +182,6 @@
         .addTo(map)
         .bindPopup(`
         <strong>${point.name}</strong><strong>-${point.distance}</strong><br>
-        <img src="${point.image}" alt="${point.name}" style="width:100%;width:300px;margin-top:5px;"><br>
         <small>${point.desc}</small>
         `);
     });
